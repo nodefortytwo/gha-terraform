@@ -12,5 +12,3 @@ jobs:
           list:
             - one
             - two
-          map:
-            key: value
