@@ -9,6 +9,3 @@ jobs:
         with:
           root_dir: ".tests/workspace/terraform"
           action: "apply"
-          list:
-            - one
-            - two
