@@ -1,0 +1,15 @@
+# action.yml
+name: "terraform"
+description: "Runs terraform 0.12.12"
+inputs:
+  root_dir: # id of input
+    description: "where is the terraform directory"
+    required: false
+    default: "."
+  action: # id of input
+    description: "what action should be used"
+    required: false
+    default: "plan"
+runs:
+  using: "docker"
+  image: "Dockerfile"

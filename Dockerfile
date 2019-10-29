@@ -1,7 +1,9 @@
-FROM alpine:latest
+FROM hashicorp/terraform:0.12.12
 
-COPY bin/entrypoint.sh entrypoint.sh
-RUN chmod a+x entrypoint.sh
+RUN apk add tree
 
-ENTRYPOINT [ "entrypoint.sh" ]
+ADD ./bin/entrypoint.sh /entrypoint.sh
+RUN chmod a+x /entrypoint.sh
+
+ENTRYPOINT /entrypoint.sh
 
