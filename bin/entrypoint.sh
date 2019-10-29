@@ -1,4 +1,5 @@
 #!/bin/sh -l
+pwd
 tree
 cd $INPUT_ROOT_DIR
 tree
