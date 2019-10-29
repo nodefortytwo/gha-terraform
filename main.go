@@ -41,6 +41,11 @@ func start() (err error) {
 
 func runAction(action, varFile, rootDir string) (err error) {
 	actionArgs := []string{action}
+
+	if action == "apply" {
+		actionArgs = append(actionArgs, "-auto-approve")
+	}
+
 	if varFile != "" {
 		actionArgs = append(actionArgs, "-var-file="+varFile)
 	}
