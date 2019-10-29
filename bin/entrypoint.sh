@@ -1,6 +1,8 @@
 #!/bin/sh -l
-pwd
-tree
+echo $INPUT_LIST
+echo $INPUT_MAP
+
+
 cd $INPUT_ROOT_DIR
 tree
 terraform init
