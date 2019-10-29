@@ -7,5 +7,5 @@ jobs:
       - uses: actions/checkout@v1
       - uses: nodefortytwo/gha-terraform@master
         with:
-          root_dir: ".tests/workspace/terraform"
+          root_dir: "./tests/workspace/terraform"
           action: "apply"
